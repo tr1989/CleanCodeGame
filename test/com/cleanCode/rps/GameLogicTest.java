@@ -12,7 +12,7 @@ public class GameLogicTest {
 
         GameLogic gameLogic = new GameLogic();
 
-        String actual = String.valueOf(Constants.Results.PAPER_WINS);
+        String actual = Constants.Results.PAPER_WINS.name();
         String expected = gameLogic.decideWinner(userInput1.getUserInput(), userInput2.getUserInput());
         Assert.assertEquals(actual, expected);
     }
@@ -24,7 +24,7 @@ public class GameLogicTest {
 
         GameLogic gameLogic = new GameLogic();
 
-        String actual = String.valueOf(Constants.Results.ROCK_WINS);
+        String actual = Constants.Results.ROCK_WINS.name();
         String expected = gameLogic.decideWinner(userInput1.getUserInput(), userInput2.getUserInput());
         Assert.assertEquals(actual, expected);
     }
@@ -36,7 +36,7 @@ public class GameLogicTest {
 
         GameLogic gameLogic = new GameLogic();
 
-        String actual = String.valueOf(Constants.Results.TIE);
+        String actual = Constants.Results.TIE.name();
         String expected = gameLogic.decideWinner(userInput1.getUserInput(), userInput2.getUserInput());
         Assert.assertEquals(actual, expected);
     }
@@ -48,7 +48,7 @@ public class GameLogicTest {
 
         GameLogic gameLogic = new GameLogic();
 
-        String actual = String.valueOf(Constants.Results.PAPER_WINS);
+        String actual = Constants.Results.PAPER_WINS.name();
         String expected = gameLogic.decideWinner(userInput1.getUserInput(), userInput2.getUserInput());
         Assert.assertEquals(actual, expected);
     }
@@ -60,7 +60,7 @@ public class GameLogicTest {
 
         GameLogic gameLogic = new GameLogic();
 
-        String actual = String.valueOf(Constants.Results.SCISSORS_WINS);
+        String actual = Constants.Results.SCISSORS_WINS.name();
         String expected = gameLogic.decideWinner(userInput1.getUserInput(), userInput2.getUserInput());
         Assert.assertEquals(actual, expected);
     }
@@ -72,7 +72,7 @@ public class GameLogicTest {
 
         GameLogic gameLogic = new GameLogic();
 
-        String actual = String.valueOf(Constants.Results.TIE);
+        String actual = Constants.Results.TIE.name();
         String expected = gameLogic.decideWinner(userInput1.getUserInput(), userInput2.getUserInput());
         Assert.assertEquals(actual, expected);
     }
@@ -84,7 +84,7 @@ public class GameLogicTest {
 
         GameLogic gameLogic = new GameLogic();
 
-        String actual = String.valueOf(Constants.Results.ROCK_WINS);
+        String actual = Constants.Results.ROCK_WINS.name();
         String expected = gameLogic.decideWinner(userInput1.getUserInput(), userInput2.getUserInput());
         Assert.assertEquals(actual, expected);
     }
@@ -96,7 +96,7 @@ public class GameLogicTest {
 
         GameLogic gameLogic = new GameLogic();
 
-        String actual = String.valueOf(Constants.Results.SCISSORS_WINS);
+        String actual = Constants.Results.SCISSORS_WINS.name();
         String expected = gameLogic.decideWinner(userInput1.getUserInput(), userInput2.getUserInput());
         Assert.assertEquals(actual, expected);
     }
@@ -108,7 +108,7 @@ public class GameLogicTest {
 
         GameLogic gameLogic = new GameLogic();
 
-        String actual = String.valueOf(Constants.Results.TIE);
+        String actual = Constants.Results.TIE.name();
         String expected = gameLogic.decideWinner(userInput1.getUserInput(), userInput2.getUserInput());
         Assert.assertEquals(actual, expected);
     }

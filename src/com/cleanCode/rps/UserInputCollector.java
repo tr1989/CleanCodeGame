@@ -14,7 +14,7 @@ public class UserInputCollector {
     }
 
     public boolean isInputValid(String userInput) {
-        return userInput.equalsIgnoreCase(String.valueOf(Constants.Inputs.R)) || userInput.equalsIgnoreCase(String.valueOf(Constants.Inputs.P))
-                || userInput.equalsIgnoreCase(String.valueOf(Constants.Inputs.S));
+        return userInput.equalsIgnoreCase(Constants.Inputs.R.name()) || userInput.equalsIgnoreCase(Constants.Inputs.P.name())
+                || userInput.equalsIgnoreCase(Constants.Inputs.S.name());
     }
 }
