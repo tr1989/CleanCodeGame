@@ -1,25 +1,19 @@
 package com.cleanCode.rps;
 
 public class UserInputCollector {
-    private String userInput1;
-    private String userInput2;
+    private String userInput;
 
-    public UserInputCollector(String userInput1, String userInput2) {
-        this.userInput1 = userInput1;
-        this.userInput2 = userInput2;
+    public UserInputCollector(String userInput) {
+        this.userInput = userInput;
     }
 
-    public String getUserInput1() {
-        return userInput1;
-    }
-
-    public String getUserInput2() {
-        return userInput2;
+    public String getUserInput() {
+        return userInput;
     }
 
     public boolean isInputValid(String userInput) {
-        if (userInput.equalsIgnoreCase("R")
-                || userInput.equalsIgnoreCase("P") || userInput.equalsIgnoreCase("S")) {
+        if (userInput.equalsIgnoreCase(String.valueOf(Constants.Inputs.R)) || userInput.equalsIgnoreCase(String.valueOf(Constants.Inputs.P))
+                || userInput.equalsIgnoreCase(String.valueOf(Constants.Inputs.S))) {
             return true;
         } else {
             return false;
