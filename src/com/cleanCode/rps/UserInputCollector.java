@@ -9,11 +9,20 @@ public class UserInputCollector {
         this.userInput2 = userInput2;
     }
 
-    public void setUserInput1(String userInput1) {
-        this.userInput1 = userInput1;
+    public String getUserInput1() {
+        return userInput1;
     }
 
     public String getUserInput2() {
         return userInput2;
+    }
+
+    public boolean isInputValid(String userInput) {
+        if (userInput.equalsIgnoreCase("R")
+                || userInput.equalsIgnoreCase("P") || userInput.equalsIgnoreCase("S")) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
