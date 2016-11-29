@@ -7,13 +7,13 @@ import static org.junit.Assert.*;
 public class GameLogicTest {
 
     @Test
-    public void testGameLogic(){
-        UserInputCollector userInput1 = new UserInputCollector("S");
-        UserInputCollector userInput2 =  new UserInputCollector("R");
+    public void testGameLogicForRockAndPaper(){
+        UserInputCollector userInput1 = new UserInputCollector("R");
+        UserInputCollector userInput2 =  new UserInputCollector("P");
 
         GameLogic gameLogic = new GameLogic();
 
-        String actual = "true";
+        String actual = String.valueOf(Constants.Results.PAPER_WINS);
         String expected = gameLogic.decideWinner(userInput1.getUserInput(), userInput2.getUserInput());
         Assert.assertEquals(actual, expected);
     }
