@@ -7,6 +7,8 @@ public class UserInputCollector {
         this.userInput = userInput;
     }
 
+    public UserInputCollector() {}
+
     public String getUserInput() {
         return userInput;
     }
