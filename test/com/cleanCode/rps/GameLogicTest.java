@@ -41,4 +41,40 @@ public class GameLogicTest {
         String expected = gameLogic.decideWinner(userInput1.getUserInput(), userInput2.getUserInput());
         Assert.assertEquals(actual, expected);
     }
+
+    @Test
+    public void testGameLogicForPaperAndRock(){
+        UserInputCollector userInput1 = new UserInputCollector("P");
+        UserInputCollector userInput2 =  new UserInputCollector("R");
+
+        GameLogic gameLogic = new GameLogic();
+
+        String actual = String.valueOf(Constants.Results.PAPER_WINS);
+        String expected = gameLogic.decideWinner(userInput1.getUserInput(), userInput2.getUserInput());
+        Assert.assertEquals(actual, expected);
+    }
+
+    @Test
+    public void testGameLogicForPaperAndScissors(){
+        UserInputCollector userInput1 = new UserInputCollector("P");
+        UserInputCollector userInput2 =  new UserInputCollector("S");
+
+        GameLogic gameLogic = new GameLogic();
+
+        String actual = String.valueOf(Constants.Results.SCISSORS_WINS);
+        String expected = gameLogic.decideWinner(userInput1.getUserInput(), userInput2.getUserInput());
+        Assert.assertEquals(actual, expected);
+    }
+
+    @Test
+    public void testGameLogicForPaperAndPaper(){
+        UserInputCollector userInput1 = new UserInputCollector("P");
+        UserInputCollector userInput2 =  new UserInputCollector("P");
+
+        GameLogic gameLogic = new GameLogic();
+
+        String actual = String.valueOf(Constants.Results.TIE);
+        String expected = gameLogic.decideWinner(userInput1.getUserInput(), userInput2.getUserInput());
+        Assert.assertEquals(actual, expected);
+    }
 }
